@@ -1,5 +1,5 @@
-drop table if exists items;
-create table if exists items (
+drop table if exists items1;
+create table if exists items1 (
   item_id mediumint(8) unsigned not null default 0,
   name varchar(255) not null default '',
   quality tinyint(3) unsigned not null default 0,
@@ -129,7 +129,7 @@ create table if exists items (
   max_money_loot int(10) unsigned not null default 0,
   extra_flags tinyint(1) unsigned not null default 0,
   other_team_entry int(11) unsigned DEFAULT 1,
-  KEY items_id (item_id),
-  KEY items_name (name),
-  KEY items_index (class)
-) engine InnoDB DEFAULT CHARSET=utf8 COMMENT='Item System';
+  KEY items1_id (item_id),
+  KEY items1_name (name),
+  KEY items1_index (class)
+) engine InnoDB DEFAULT CHARSET=utf8 COMMENT="item system";
