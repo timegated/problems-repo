@@ -11,7 +11,6 @@ function three(twoRes) {
   return twoRes * 100;
 }
 
-
 function oneString(str) {
   return str.toUpperCase();
 }
